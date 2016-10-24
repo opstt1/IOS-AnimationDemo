@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gradient Layer View Controller-->
+        <scene sceneID="kgc-fO-n0k">
+            <objects>
+                <viewController storyboardIdentifier="LHMCAGradientLayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="LWl-RY-DF6" customClass="LHMCAGradientLayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cJo-Et-hgn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ggr-xQ-JlI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FzC-3J-shA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tPb-Ge-WDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-625" y="-134"/>
+        </scene>
+        <!--Replicatior Layer View Controller-->
+        <scene sceneID="ndw-mn-nCC">
+            <objects>
+                <viewController storyboardIdentifier="LHMCAReplicatiorLayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x2t-hu-Gvv" customClass="LHMCAReplicatiorLayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hpE-Wd-DyX"/>
+                        <viewControllerLayoutGuide type="bottom" id="add-tO-DbG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t8D-sd-2ia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqk-9z-HZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="-134"/>
+        </scene>
+        <!--Transform Layer View Controller-->
+        <scene sceneID="PpU-K5-Oof">
+            <objects>
+                <viewController storyboardIdentifier="LHMCATransformLayerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Mja-k6-lmR" customClass="LHMCATransformLayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Zi-Kl-P61"/>
+                        <viewControllerLayoutGuide type="bottom" id="VOb-b6-Cas"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fPf-Qs-Z7f">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="83a-YY-ha9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="-136"/>
+        </scene>
+    </scenes>
+</document>
