@@ -28,6 +28,14 @@
 			<key>identifier</key>
 			<string>LHMCAReplicatiorLayerViewController</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAEmitterLayer</string>
+			<key>desc</key>
+			<string>啦啦啦3</string>
+			<key>identifier</key>
+			<string>LHMCAEmitterLayerViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>
