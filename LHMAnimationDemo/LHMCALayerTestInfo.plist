@@ -36,6 +36,14 @@
 			<key>identifier</key>
 			<string>LHMCAEmitterLayerViewController</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>CAEAGLLayer</string>
+			<key>desc</key>
+			<string>啦啦啦3</string>
+			<key>identifier</key>
+			<string>LHMCAEAGLLayerViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

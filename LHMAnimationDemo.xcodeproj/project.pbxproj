@@ -26,6 +26,9 @@
 		E2686F281DBDF315005459E4 /* LHMCALayerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2686F271DBDF315005459E4 /* LHMCALayerTest.storyboard */; };
 		E2686F2B1DBDF58C005459E4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F2A1DBDF58C005459E4 /* Constants.m */; };
 		E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */; };
+		E2C91AEC1DBF64C800820C71 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AEB1DBF64C800820C71 /* GLKit.framework */; };
+		E2C91AEE1DBF64D800820C71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AED1DBF64D800820C71 /* OpenGLES.framework */; };
+		E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C91AF01DBF652D00820C71 /* LHMCAEAGLLayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,10 @@
 		E2686F2A1DBDF58C005459E4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		E2C91AE81DBF490E00820C71 /* LHMCAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAEmitterLayerViewController.h; sourceTree = "<group>"; };
 		E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAEmitterLayerViewController.m; sourceTree = "<group>"; };
+		E2C91AEB1DBF64C800820C71 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		E2C91AED1DBF64D800820C71 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		E2C91AEF1DBF652D00820C71 /* LHMCAEAGLLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAEAGLLayerViewController.h; sourceTree = "<group>"; };
+		E2C91AF01DBF652D00820C71 /* LHMCAEAGLLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAEAGLLayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +77,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2C91AEE1DBF64D800820C71 /* OpenGLES.framework in Frameworks */,
+				E2C91AEC1DBF64C800820C71 /* GLKit.framework in Frameworks */,
 				912F10CF5ABF80A6A18A3D13 /* libPods-LHMAnimationDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +98,8 @@
 		A814F040A659C37C0969B9E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E2C91AED1DBF64D800820C71 /* OpenGLES.framework */,
+				E2C91AEB1DBF64C800820C71 /* GLKit.framework */,
 				27099AF40D9F7AB4E02CE9FB /* libPods-LHMAnimationDemo.a */,
 			);
 			name = Frameworks;
@@ -157,6 +168,8 @@
 				E214B8E61DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m */,
 				E2C91AE81DBF490E00820C71 /* LHMCAEmitterLayerViewController.h */,
 				E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */,
+				E2C91AEF1DBF652D00820C71 /* LHMCAEAGLLayerViewController.h */,
+				E2C91AF01DBF652D00820C71 /* LHMCAEAGLLayerViewController.m */,
 			);
 			name = LHMCALayerTest;
 			sourceTree = "<group>";
@@ -312,6 +325,7 @@
 				E2686F231DBDE81B005459E4 /* BaseViewController.m in Sources */,
 				E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */,
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
+				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
 				E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */,
 				E214B8D11DBDDAD900F6D0D3 /* ViewController.m in Sources */,
 				E2686F261DBDE892005459E4 /* LHMViewControllerFactory.m in Sources */,
