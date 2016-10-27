@@ -45,11 +45,24 @@
                                     <segue destination="axf-ch-bs3" kind="show" id="h4J-y0-9K5"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-oV-tbD">
+                                <color key="backgroundColor" red="0.35488414115646261" green="0.53805928620272114" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Animation">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="iJc-AE-sX5" kind="show" id="qpl-pA-RbJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="OnP-oV-tbD" firstAttribute="height" secondItem="Ijw-Hq-syd" secondAttribute="height" id="5sq-gE-7iA"/>
+                            <constraint firstItem="OnP-oV-tbD" firstAttribute="top" secondItem="Ijw-Hq-syd" secondAttribute="bottom" constant="66" id="CU6-Nr-dvK"/>
                             <constraint firstItem="Ijw-Hq-syd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2Y-E9-2pB"/>
+                            <constraint firstItem="OnP-oV-tbD" firstAttribute="width" secondItem="Ijw-Hq-syd" secondAttribute="width" id="TXX-pG-lf6"/>
                             <constraint firstItem="Ijw-Hq-syd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="psd-Jf-AkD"/>
+                            <constraint firstItem="OnP-oV-tbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTi-Mw-eZ7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vtV-TJ-qNM"/>
@@ -87,7 +100,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ir4-zm-A9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="873" y="38"/>
+            <point key="canvasLocation" x="1118" y="-314"/>
+        </scene>
+        <!--Animation Test View Controller-->
+        <scene sceneID="R4h-cv-wI5">
+            <objects>
+                <viewController id="iJc-AE-sX5" customClass="LHMAnimationTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVk-hJ-vgm"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qit-Lg-lZl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JZc-bz-fx6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ERv-QF-Mdo">
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ERv-QF-Mdo" firstAttribute="height" secondItem="JZc-bz-fx6" secondAttribute="height" id="2p9-bq-YxZ"/>
+                            <constraint firstItem="ERv-QF-Mdo" firstAttribute="centerX" secondItem="JZc-bz-fx6" secondAttribute="centerX" id="XyQ-Vj-sBW"/>
+                            <constraint firstItem="ERv-QF-Mdo" firstAttribute="centerY" secondItem="JZc-bz-fx6" secondAttribute="centerY" id="YRW-Az-juD"/>
+                            <constraint firstItem="ERv-QF-Mdo" firstAttribute="width" secondItem="JZc-bz-fx6" secondAttribute="width" id="hQr-wY-UnJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="ERv-QF-Mdo" id="6e8-C3-0wW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IOt-F6-psi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1118" y="383"/>
         </scene>
     </scenes>
 </document>

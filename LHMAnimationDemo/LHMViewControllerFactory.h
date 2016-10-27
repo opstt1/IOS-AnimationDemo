@@ -14,4 +14,6 @@
 
 + (BaseViewController *)caLayerViewControllerWithIdentifier:(NSString *)identifier;
 
++ (BaseViewController *)animationViewControllerWithIdentifier:(NSString *)identifier;
+                                                               
 @end

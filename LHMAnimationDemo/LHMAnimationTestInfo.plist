@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>data</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>ImplicitAnimation</string>
+			<key>desc</key>
+			<string>啦啦啦</string>
+			<key>identifier</key>
+			<string>LHMImplicitAnimationViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>

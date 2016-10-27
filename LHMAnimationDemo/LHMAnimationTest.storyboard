@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Implicit Animation View Controller-->
+        <scene sceneID="pQS-8f-36s">
+            <objects>
+                <viewController storyboardIdentifier="LHMImplicitAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iDN-xu-TBH" customClass="LHMImplicitAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4kT-Q1-rYR"/>
+                        <viewControllerLayoutGuide type="bottom" id="lGj-dv-JOS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qn2-iq-igV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eFg-TY-n85">
+                                <color key="backgroundColor" red="0.73333333329999995" green="0.73333333329999995" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="asn-Tx-skO"/>
+                                    <constraint firstAttribute="height" constant="50" id="gAO-y9-X2Y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="iDN-xu-TBH" eventType="touchUpInside" id="ghm-vr-gKA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0RQ-2A-zfC">
+                                <color key="backgroundColor" red="0.35488414115646261" green="0.53805928620272114" blue="0.07688262803945585" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="滑动变色">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapTranstitionButton:" destination="iDN-xu-TBH" eventType="touchUpInside" id="qbE-Gx-4SZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0RQ-2A-zfC" firstAttribute="height" secondItem="eFg-TY-n85" secondAttribute="height" id="2B9-jT-DvS"/>
+                            <constraint firstItem="0RQ-2A-zfC" firstAttribute="width" secondItem="eFg-TY-n85" secondAttribute="width" id="GBI-6r-C2w"/>
+                            <constraint firstItem="eFg-TY-n85" firstAttribute="top" secondItem="4kT-Q1-rYR" secondAttribute="bottom" constant="20" id="RYO-cB-YrE"/>
+                            <constraint firstItem="0RQ-2A-zfC" firstAttribute="centerX" secondItem="Qn2-iq-igV" secondAttribute="centerX" multiplier="3:2" id="W5J-58-bFn"/>
+                            <constraint firstItem="eFg-TY-n85" firstAttribute="centerX" secondItem="Qn2-iq-igV" secondAttribute="centerX" multiplier="1:2" id="ZGa-Fx-PmP"/>
+                            <constraint firstItem="0RQ-2A-zfC" firstAttribute="centerY" secondItem="eFg-TY-n85" secondAttribute="centerY" id="da6-b1-WXJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7RO-H2-PBQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
