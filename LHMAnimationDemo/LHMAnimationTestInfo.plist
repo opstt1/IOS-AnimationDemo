@@ -20,6 +20,14 @@
 			<key>identifier</key>
 			<string>LHMDisplayAnimationViewController</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>CATransition</string>
+			<key>desc</key>
+			<string>啦啦啦</string>
+			<key>identifier</key>
+			<string>LHMCATransitionViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

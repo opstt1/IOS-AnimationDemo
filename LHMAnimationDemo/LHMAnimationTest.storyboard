@@ -119,10 +119,10 @@
             </objects>
             <point key="canvasLocation" x="767" y="38"/>
         </scene>
-        <!--View Controller-->
+        <!--Transition View Controller-->
         <scene sceneID="45Y-CN-73s">
             <objects>
-                <viewController id="3ri-E4-v40" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LHMCATransitionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3ri-E4-v40" customClass="LHMCATransitionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="pIX-9O-M2m"/>
                         <viewControllerLayoutGuide type="bottom" id="Q32-OX-wfT"/>
@@ -130,12 +130,68 @@
                     <view key="view" contentMode="scaleToFill" id="HLz-GN-2Uu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hey-ah-8Dn">
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="AIo-Zo-OIk"/>
+                                </constraints>
+                                <state key="normal" title="CATransition">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSwitchImageButton:" destination="3ri-E4-v40" eventType="touchUpInside" id="cpN-gE-82l"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kunte_0" translatesAutoresizingMaskIntoConstraints="NO" id="jUv-0S-4HS"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raD-YQ-eRN">
+                                <color key="backgroundColor" red="0.18924753289999999" green="0.8974609375" blue="0.2529296875" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="UIViewTransition">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapUIViewTransitionButton:" destination="3ri-E4-v40" eventType="touchUpInside" id="YJu-aZ-RBv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0g6-rH-cB4">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="自定义">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCustomAnimatinButton:" destination="3ri-E4-v40" eventType="touchUpInside" id="1Bu-AW-HLM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Hey-ah-8Dn" firstAttribute="width" secondItem="HLz-GN-2Uu" secondAttribute="width" multiplier="1:3" id="0Vf-d6-hS5"/>
+                            <constraint firstItem="jUv-0S-4HS" firstAttribute="centerX" secondItem="HLz-GN-2Uu" secondAttribute="centerX" id="57m-8Z-3Y6"/>
+                            <constraint firstItem="0g6-rH-cB4" firstAttribute="leading" secondItem="raD-YQ-eRN" secondAttribute="trailing" id="A3m-Sv-RJF"/>
+                            <constraint firstItem="raD-YQ-eRN" firstAttribute="height" secondItem="Hey-ah-8Dn" secondAttribute="height" id="ERr-n3-M8T"/>
+                            <constraint firstItem="jUv-0S-4HS" firstAttribute="width" secondItem="HLz-GN-2Uu" secondAttribute="width" id="JFM-2r-o5P"/>
+                            <constraint firstItem="0g6-rH-cB4" firstAttribute="height" secondItem="raD-YQ-eRN" secondAttribute="height" id="KbH-0O-pgn"/>
+                            <constraint firstItem="raD-YQ-eRN" firstAttribute="leading" secondItem="Hey-ah-8Dn" secondAttribute="trailing" id="N5V-gF-fdc"/>
+                            <constraint firstItem="Hey-ah-8Dn" firstAttribute="top" secondItem="pIX-9O-M2m" secondAttribute="bottom" id="Nks-qZ-pVd"/>
+                            <constraint firstItem="Q32-OX-wfT" firstAttribute="top" secondItem="jUv-0S-4HS" secondAttribute="bottom" id="QlY-mF-mtJ"/>
+                            <constraint firstItem="0g6-rH-cB4" firstAttribute="width" secondItem="raD-YQ-eRN" secondAttribute="width" id="Ttl-gl-3HG"/>
+                            <constraint firstItem="jUv-0S-4HS" firstAttribute="top" secondItem="Hey-ah-8Dn" secondAttribute="bottom" id="a3C-Jj-inN"/>
+                            <constraint firstItem="raD-YQ-eRN" firstAttribute="centerY" secondItem="Hey-ah-8Dn" secondAttribute="centerY" id="t1r-xA-6xE"/>
+                            <constraint firstItem="0g6-rH-cB4" firstAttribute="centerY" secondItem="raD-YQ-eRN" secondAttribute="centerY" id="t2C-K9-Z1V"/>
+                            <constraint firstItem="raD-YQ-eRN" firstAttribute="width" secondItem="Hey-ah-8Dn" secondAttribute="width" id="uQX-HA-CmI"/>
+                            <constraint firstItem="Hey-ah-8Dn" firstAttribute="centerX" secondItem="HLz-GN-2Uu" secondAttribute="centerX" multiplier="1:3" id="vz4-im-EDj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jUv-0S-4HS" id="eOk-94-IQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MDL-DV-Gm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1405" y="35"/>
+            <point key="canvasLocation" x="1404" y="34.632683658170919"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="kunte_0" width="540" height="960"/>
+    </resources>
 </document>

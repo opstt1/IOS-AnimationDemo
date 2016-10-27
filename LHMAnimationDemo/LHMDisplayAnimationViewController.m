@@ -25,7 +25,7 @@
 - (void)p_creatSubCALayer
 {
     self.calayer = [CALayer layer];
-    self.calayer.frame = CGRectMake(UISCREEN_WIDTH/2-100, UISCREEN_HEIGHT/2-100, 200, 100);
+    self.calayer.frame = CGRectMake(0,40+64+15, UISCREEN_WIDTH, UISCREEN_HEIGHT-40-64-15);
     self.calayer.backgroundColor = [UIColor blueColor].CGColor;
     
     [self.view.layer addSublayer:_calayer];
