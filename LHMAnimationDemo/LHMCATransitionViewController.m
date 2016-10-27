@@ -77,10 +77,18 @@
     [self p_changeImage];
     self.imageView.alpha = 0.1;
     [UIView animateWithDuration:2.0f animations:^{
+        //不断缩小
         CGAffineTransform transform = CGAffineTransformMakeScale(0.01, 0.01);
-        transform = CGAffineTransformRotate(transform, M_PI_2);
         coverView.transform = transform;
         coverView.alpha = 0.0f;
+        
+        //高速旋转，狂转
+        CABasicAnimation *animation = [CABasicAnimation animation];
+        animation.keyPath = @"transform.rotation";
+        animation.duration = 2.0;
+        animation.byValue = @(M_PI * 20);
+        [coverView.layer addAnimation:animation forKey:nil];
+        //降低透明度
         self.imageView.alpha = 1.0f;
     } completion:^(BOOL finished) {
         [coverView removeFromSuperview];
