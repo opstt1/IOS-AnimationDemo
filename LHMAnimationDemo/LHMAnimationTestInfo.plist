@@ -12,6 +12,14 @@
 			<key>identifier</key>
 			<string>LHMImplicitAnimationViewController</string>
 		</dict>
+		<dict>
+			<key>title</key>
+			<string>DisplayAnimation</string>
+			<key>desc</key>
+			<string>啦啦啦</string>
+			<key>identifier</key>
+			<string>LHMDisplayAnimationViewController</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -29,6 +29,8 @@
 		E2C91AEC1DBF64C800820C71 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AEB1DBF64C800820C71 /* GLKit.framework */; };
 		E2C91AEE1DBF64D800820C71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AED1DBF64D800820C71 /* OpenGLES.framework */; };
 		E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C91AF01DBF652D00820C71 /* LHMCAEAGLLayerViewController.m */; };
+		E2DD0D6E1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD0D6D1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m */; };
+		E2DD0D711DC1A306004BCE8E /* UIColor+random.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DD0D701DC1A306004BCE8E /* UIColor+random.m */; };
 		E2DE1B0D1DC04E5C00B08215 /* LHMAnimationTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2DE1B0C1DC04E5C00B08215 /* LHMAnimationTest.storyboard */; };
 		E2DE1B101DC04EB800B08215 /* LHMImplicitAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE1B0F1DC04EB800B08215 /* LHMImplicitAnimationViewController.m */; };
 		E2DE1B121DC04EFE00B08215 /* LHMAnimationTestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DE1B111DC04EFE00B08215 /* LHMAnimationTestInfo.plist */; };
@@ -74,6 +76,10 @@
 		E2C91AED1DBF64D800820C71 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		E2C91AEF1DBF652D00820C71 /* LHMCAEAGLLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAEAGLLayerViewController.h; sourceTree = "<group>"; };
 		E2C91AF01DBF652D00820C71 /* LHMCAEAGLLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAEAGLLayerViewController.m; sourceTree = "<group>"; };
+		E2DD0D6C1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDisplayAnimationViewController.h; sourceTree = "<group>"; };
+		E2DD0D6D1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDisplayAnimationViewController.m; sourceTree = "<group>"; };
+		E2DD0D6F1DC1A306004BCE8E /* UIColor+random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+random.h"; sourceTree = "<group>"; };
+		E2DD0D701DC1A306004BCE8E /* UIColor+random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+random.m"; sourceTree = "<group>"; };
 		E2DE1B0C1DC04E5C00B08215 /* LHMAnimationTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LHMAnimationTest.storyboard; sourceTree = "<group>"; };
 		E2DE1B0E1DC04EB800B08215 /* LHMImplicitAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMImplicitAnimationViewController.h; sourceTree = "<group>"; };
 		E2DE1B0F1DC04EB800B08215 /* LHMImplicitAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMImplicitAnimationViewController.m; sourceTree = "<group>"; };
@@ -194,6 +200,8 @@
 				E2686F221DBDE81B005459E4 /* BaseViewController.m */,
 				E2686F241DBDE892005459E4 /* LHMViewControllerFactory.h */,
 				E2686F251DBDE892005459E4 /* LHMViewControllerFactory.m */,
+				E2DD0D6F1DC1A306004BCE8E /* UIColor+random.h */,
+				E2DD0D701DC1A306004BCE8E /* UIColor+random.m */,
 			);
 			name = BaseUI;
 			sourceTree = "<group>";
@@ -207,6 +215,8 @@
 				E2DE1B141DC04F1300B08215 /* LHMAnimationTestViewController.m */,
 				E2DE1B0E1DC04EB800B08215 /* LHMImplicitAnimationViewController.h */,
 				E2DE1B0F1DC04EB800B08215 /* LHMImplicitAnimationViewController.m */,
+				E2DD0D6C1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.h */,
+				E2DD0D6D1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m */,
 			);
 			name = LHMAnimationTest;
 			sourceTree = "<group>";
@@ -350,6 +360,8 @@
 				E2686F2B1DBDF58C005459E4 /* Constants.m in Sources */,
 				E214B8E71DBDDB0100F6D0D3 /* LHMCAGradientLayerViewController.m in Sources */,
 				E2686F231DBDE81B005459E4 /* BaseViewController.m in Sources */,
+				E2DD0D711DC1A306004BCE8E /* UIColor+random.m in Sources */,
+				E2DD0D6E1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m in Sources */,
 				E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */,
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
 				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
