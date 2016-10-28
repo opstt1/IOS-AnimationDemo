@@ -12,6 +12,13 @@
 @interface LHMDisplayAnimationViewController ()<CAAnimationDelegate>
 
 @property (nonatomic, readwrite, strong) CALayer *calayer;
+@property (nonatomic, readwrite, strong) CALayer *shipLayer;
+@property (nonatomic, readwrite, strong) CAShapeLayer *shipPathLayer;
+
+@property (weak, nonatomic) IBOutlet UISlider *timeOffsetSlider;
+@property (weak, nonatomic) IBOutlet UILabel *tiemOffsetLabel;
+@property (weak, nonatomic) IBOutlet UISlider *speedSlider;
+@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 
 @end
 
@@ -20,16 +27,43 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self p_creatSubCALayer];
+    [self p_creatShip];
+    [self updateSlider:nil];
 }
 
 - (void)p_creatSubCALayer
 {
     self.calayer = [CALayer layer];
-    self.calayer.frame = CGRectMake(0,40+64+15, UISCREEN_WIDTH, UISCREEN_HEIGHT-40-64-15);
+    self.calayer.frame = CGRectMake(0,40+64+15, UISCREEN_WIDTH, UISCREEN_HEIGHT-40-64-15-10-60);
     self.calayer.backgroundColor = [UIColor blueColor].CGColor;
     
     [self.view.layer addSublayer:_calayer];
 }
+
+//创建飞船和路径
+- (void)p_creatShip
+{
+    //创建UIBezierPath曲线
+    UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
+    [bezierPath moveToPoint:CGPointMake(150, 200)];
+    [bezierPath addCurveToPoint:CGPointMake(150, 500) controlPoint1:CGPointMake(0, 280) controlPoint2:CGPointMake(450, 350)];
+    
+    //创建飞船路径
+    _shipPathLayer = [CAShapeLayer layer];
+    _shipPathLayer.path = bezierPath.CGPath;
+    _shipPathLayer.fillColor = [UIColor clearColor].CGColor;
+    _shipPathLayer.strokeColor = [UIColor redColor].CGColor;
+    _shipPathLayer.lineWidth = 2.5f;
+    
+    //创建飞船
+    _shipLayer = [CALayer layer];
+    _shipLayer.contents = (__bridge id)[UIImage imageNamed:@"eveship"].CGImage;
+    _shipLayer.position = CGPointMake(150, 0);
+    _shipLayer.frame = CGRectMake(0, 0, 64, 32);
+    [self.view.layer addSublayer:_shipLayer];
+
+}
+#pragma mark - 
 
 - (IBAction)didTapChangeColor:(id)sender
 {
@@ -70,30 +104,11 @@
 //UIBezierPath 动画
 - (IBAction)didTapBezierPathAnimation:(id)sender {
     
-    //创建UIBezierPath曲线
-    UIBezierPath *bezierPath = [[UIBezierPath alloc] init];
-    [bezierPath moveToPoint:CGPointMake(150, 200)];
-    [bezierPath addCurveToPoint:CGPointMake(150, 500) controlPoint1:CGPointMake(0, 280) controlPoint2:CGPointMake(450, 350)];
-    
-    //创建飞船路径
-    CAShapeLayer *pathLayer = [CAShapeLayer layer];
-    pathLayer.path = bezierPath.CGPath;
-    pathLayer.fillColor = [UIColor clearColor].CGColor;
-    pathLayer.strokeColor = [UIColor redColor].CGColor;
-    pathLayer.lineWidth = 2.5f;
-//    [self.view.layer addSublayer:pathLayer];
-    
-    //创建飞船
-    CALayer *shipLayer = [CALayer layer];
-    shipLayer.contents = (__bridge id)[UIImage imageNamed:@"eveship"].CGImage;
-    shipLayer.position = CGPointMake(150, 0);
-    shipLayer.frame = CGRectMake(0, 0, 64, 32);
-    [self.view.layer addSublayer:shipLayer];
     
     //创建飞船动画，并且使用UIBezierPath
     CAKeyframeAnimation *animation1 = [CAKeyframeAnimation animation];
     animation1.keyPath = @"position";
-    animation1.path = bezierPath.CGPath;
+    animation1.path = _shipPathLayer.path;
     //自动对齐图层到曲线
     animation1.rotationMode = kCAAnimationRotateAuto;
     
@@ -107,11 +122,39 @@
     groupAnimation.animations = @[animation1,animation2];
     groupAnimation.duration = 5.0f;
     
-    [shipLayer addAnimation:groupAnimation forKey:nil];
+    [_shipLayer addAnimation:groupAnimation forKey:nil];
     
-    
-    
-
 }
+
+
+#pragma mark - CAMediaTiming
+
+- (IBAction)updateSlider:(id)sender
+{
+    CFTimeInterval timeOffset = self.timeOffsetSlider.value;
+    self.tiemOffsetLabel.text = [NSString stringWithFormat:@"%.2f",timeOffset];
+    float speed = self.speedSlider.value;
+    self.speedLabel.text = [NSString stringWithFormat:@"%.2f",speed];
+}
+
+- (IBAction)didTapBeginButton:(id)sender
+{
+    [_shipLayer removeAnimationForKey:@"slide"];
+    CAKeyframeAnimation *animation1 = [CAKeyframeAnimation animation];
+    animation1.keyPath = @"position";
+    animation1.path = _shipPathLayer.path;
+    
+    animation1.timeOffset = _timeOffsetSlider.value;
+    animation1.speed = _speedSlider.value;
+    
+    NSLog(@"tiimeoff %lf  speed %lf",animation1.timeOffset,animation1.speed);
+    animation1.duration = 5.0f;
+    animation1.rotationMode = kCAAnimationRotateAuto;
+    animation1.removedOnCompletion = NO;
+    [_shipLayer addAnimation:animation1 forKey:@"slide"];
+    
+}
+
+
 
 @end
