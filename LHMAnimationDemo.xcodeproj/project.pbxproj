@@ -36,6 +36,7 @@
 		E2DE1B101DC04EB800B08215 /* LHMImplicitAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE1B0F1DC04EB800B08215 /* LHMImplicitAnimationViewController.m */; };
 		E2DE1B121DC04EFE00B08215 /* LHMAnimationTestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DE1B111DC04EFE00B08215 /* LHMAnimationTestInfo.plist */; };
 		E2DE1B151DC04F1300B08215 /* LHMAnimationTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DE1B141DC04F1300B08215 /* LHMAnimationTestViewController.m */; };
+		E2EBF3F81DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EBF3F71DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,8 @@
 		E2DE1B111DC04EFE00B08215 /* LHMAnimationTestInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LHMAnimationTestInfo.plist; sourceTree = "<group>"; };
 		E2DE1B131DC04F1300B08215 /* LHMAnimationTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMAnimationTestViewController.h; sourceTree = "<group>"; };
 		E2DE1B141DC04F1300B08215 /* LHMAnimationTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMAnimationTestViewController.m; sourceTree = "<group>"; };
+		E2EBF3F61DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAMediaTimingViewController.h; sourceTree = "<group>"; };
+		E2EBF3F71DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAMediaTimingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +225,8 @@
 				E2DD0D6D1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m */,
 				E2DD0D721DC1DB5B004BCE8E /* LHMCATransitionViewController.h */,
 				E2DD0D731DC1DB5B004BCE8E /* LHMCATransitionViewController.m */,
+				E2EBF3F61DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.h */,
+				E2EBF3F71DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m */,
 			);
 			name = LHMAnimationTest;
 			sourceTree = "<group>";
@@ -367,6 +372,7 @@
 				E214B8E71DBDDB0100F6D0D3 /* LHMCAGradientLayerViewController.m in Sources */,
 				E2686F231DBDE81B005459E4 /* BaseViewController.m in Sources */,
 				E2DD0D711DC1A306004BCE8E /* UIColor+random.m in Sources */,
+				E2EBF3F81DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m in Sources */,
 				E2DD0D6E1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m in Sources */,
 				E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */,
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,

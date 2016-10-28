@@ -14,6 +14,7 @@
 @property (nonatomic, readwrite, strong) CALayer *calayer;
 @property (nonatomic, readwrite, strong) CALayer *shipLayer;
 @property (nonatomic, readwrite, strong) CAShapeLayer *shipPathLayer;
+@property (nonatomic, readwrite, strong) CAKeyframeAnimation *shipAnimation;
 
 @property (weak, nonatomic) IBOutlet UISlider *timeOffsetSlider;
 @property (weak, nonatomic) IBOutlet UILabel *tiemOffsetLabel;
@@ -60,6 +61,7 @@
     _shipLayer.contents = (__bridge id)[UIImage imageNamed:@"eveship"].CGImage;
     _shipLayer.position = CGPointMake(150, 0);
     _shipLayer.frame = CGRectMake(0, 0, 64, 32);
+    
     [self.view.layer addSublayer:_shipLayer];
 
 }
@@ -76,6 +78,7 @@
 }
 - (void)animationDidStop:(CABasicAnimation *)anim finished:(BOOL)flag
 {
+
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
     self.calayer.backgroundColor = (__bridge CGColorRef)anim.toValue;
@@ -140,21 +143,19 @@
 - (IBAction)didTapBeginButton:(id)sender
 {
     [_shipLayer removeAnimationForKey:@"slide"];
-    CAKeyframeAnimation *animation1 = [CAKeyframeAnimation animation];
-    animation1.keyPath = @"position";
-    animation1.path = _shipPathLayer.path;
+    _shipAnimation = [CAKeyframeAnimation animation];
+    _shipAnimation.keyPath = @"position";
+    _shipAnimation.path = _shipPathLayer.path;
+    _shipAnimation.timeOffset = _timeOffsetSlider.value;
+    _shipAnimation.speed = _speedSlider.value;
     
-    animation1.timeOffset = _timeOffsetSlider.value;
-    animation1.speed = _speedSlider.value;
-    
-    NSLog(@"tiimeoff %lf  speed %lf",animation1.timeOffset,animation1.speed);
-    animation1.duration = 5.0f;
-    animation1.rotationMode = kCAAnimationRotateAuto;
-    animation1.removedOnCompletion = NO;
-    [_shipLayer addAnimation:animation1 forKey:@"slide"];
-    
-}
+    NSLog(@"tiimeoff %lf  speed %lf",_shipAnimation.timeOffset,_shipAnimation.speed);
+    _shipAnimation.duration = 5.0f;
+    _shipAnimation.rotationMode = kCAAnimationRotateAuto;
+    _shipAnimation.removedOnCompletion = NO;
+    [_shipLayer addAnimation:_shipAnimation forKey:@"slide"];
 
+}
 
 
 @end
