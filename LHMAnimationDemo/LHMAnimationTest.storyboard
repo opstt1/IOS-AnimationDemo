@@ -73,6 +73,56 @@
             </objects>
             <point key="canvasLocation" x="-26" y="707"/>
         </scene>
+        <!--Timing Function View Controller-->
+        <scene sceneID="Msi-X5-Q0L">
+            <objects>
+                <viewController storyboardIdentifier="LHMTimingFunctionViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3e2-JM-WhI" customClass="LHMTimingFunctionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mpo-Ta-Bwl"/>
+                        <viewControllerLayoutGuide type="bottom" id="kj0-18-ctN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d0b-IO-vH7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBH-Lg-5md">
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eNX-B4-8ce"/>
+                                </constraints>
+                                <state key="normal" title="easyBall">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapEasyBallButton:" destination="3e2-JM-WhI" eventType="touchUpInside" id="x6B-dj-5mu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GGc-u9-bts">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="custom">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCustomTiming:" destination="3e2-JM-WhI" eventType="touchUpInside" id="WcD-WY-6wp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GGc-u9-bts" firstAttribute="height" secondItem="WBH-Lg-5md" secondAttribute="height" id="Fk0-td-0jt"/>
+                            <constraint firstItem="WBH-Lg-5md" firstAttribute="centerX" secondItem="d0b-IO-vH7" secondAttribute="centerX" multiplier="1:2" id="Kle-V5-zNI"/>
+                            <constraint firstItem="GGc-u9-bts" firstAttribute="width" secondItem="WBH-Lg-5md" secondAttribute="width" id="MbP-1Q-Zr9"/>
+                            <constraint firstItem="WBH-Lg-5md" firstAttribute="top" secondItem="Mpo-Ta-Bwl" secondAttribute="bottom" id="PAe-Rv-q7f"/>
+                            <constraint firstItem="WBH-Lg-5md" firstAttribute="width" secondItem="d0b-IO-vH7" secondAttribute="width" multiplier="1:2" id="buj-JV-6Qw"/>
+                            <constraint firstItem="GGc-u9-bts" firstAttribute="leading" secondItem="WBH-Lg-5md" secondAttribute="trailing" id="hvJ-jv-EaZ"/>
+                            <constraint firstItem="GGc-u9-bts" firstAttribute="centerY" secondItem="WBH-Lg-5md" secondAttribute="centerY" id="t9N-uC-T8r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fon-Po-lZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="672" y="710"/>
+        </scene>
         <!--Display Animation View Controller-->
         <scene sceneID="1Jd-Pa-lw9">
             <objects>

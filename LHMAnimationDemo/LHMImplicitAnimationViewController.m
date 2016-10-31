@@ -61,7 +61,7 @@
 {
     [CATransaction begin];
     [CATransaction setAnimationDuration:1.0];
-    
+//    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
     [CATransaction setCompletionBlock:^{
         CGAffineTransform transform = self.caLayer.affineTransform;
         transform = CGAffineTransformRotate(transform, M_PI_2);

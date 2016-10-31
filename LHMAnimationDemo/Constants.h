@@ -33,6 +33,11 @@
 #define COLOR_FD6E37 [UIColor colorWithRGB:0xFD6E37]
 #define COLOR_SYSTEM [UIColor colorWithRGB:0xFD6E37]
 
+
+#pragma mark - animation key
+
+static NSString * const AnimationKeyPosition = @"position";
+
 static const CGFloat normCellHeight = 44.0f;
 
 

@@ -92,7 +92,7 @@
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
     animation.keyPath = @"backgroundColor";
-    animation.duration = 2.0f;
+    animation.duration = 5.0f;
     animation.values = @[
                          (__bridge id)[UIColor blueColor].CGColor,
                          (__bridge id)[UIColor redColor].CGColor,
@@ -100,6 +100,9 @@
                          (__bridge id)[UIColor yellowColor].CGColor,
                          (__bridge id)[UIColor blueColor].CGColor,
                          ];
+    //添加缓冲
+    CAMediaTimingFunction *fun = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    animation.timingFunctions = @[fun,fun,fun,fun];
     [self.calayer addAnimation:animation forKey:nil];
 }
 

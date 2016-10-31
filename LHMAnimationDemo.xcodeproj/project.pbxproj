@@ -25,6 +25,7 @@
 		E2686F261DBDE892005459E4 /* LHMViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F251DBDE892005459E4 /* LHMViewControllerFactory.m */; };
 		E2686F281DBDF315005459E4 /* LHMCALayerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2686F271DBDF315005459E4 /* LHMCALayerTest.storyboard */; };
 		E2686F2B1DBDF58C005459E4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F2A1DBDF58C005459E4 /* Constants.m */; };
+		E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */; };
 		E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */; };
 		E2C91AEC1DBF64C800820C71 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AEB1DBF64C800820C71 /* GLKit.framework */; };
 		E2C91AEE1DBF64D800820C71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AED1DBF64D800820C71 /* OpenGLES.framework */; };
@@ -72,6 +73,8 @@
 		E2686F271DBDF315005459E4 /* LHMCALayerTest.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LHMCALayerTest.storyboard; sourceTree = "<group>"; };
 		E2686F291DBDF58C005459E4 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		E2686F2A1DBDF58C005459E4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		E27059651DC713C50065B496 /* LHMTimingFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMTimingFunctionViewController.h; sourceTree = "<group>"; };
+		E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMTimingFunctionViewController.m; sourceTree = "<group>"; };
 		E2C91AE81DBF490E00820C71 /* LHMCAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAEmitterLayerViewController.h; sourceTree = "<group>"; };
 		E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAEmitterLayerViewController.m; sourceTree = "<group>"; };
 		E2C91AEB1DBF64C800820C71 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -227,6 +230,8 @@
 				E2DD0D731DC1DB5B004BCE8E /* LHMCATransitionViewController.m */,
 				E2EBF3F61DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.h */,
 				E2EBF3F71DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m */,
+				E27059651DC713C50065B496 /* LHMTimingFunctionViewController.h */,
+				E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */,
 			);
 			name = LHMAnimationTest;
 			sourceTree = "<group>";
@@ -376,6 +381,7 @@
 				E2DD0D6E1DC1A16E004BCE8E /* LHMDisplayAnimationViewController.m in Sources */,
 				E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */,
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
+				E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */,
 				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
 				E2DE1B151DC04F1300B08215 /* LHMAnimationTestViewController.m in Sources */,
 				E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */,
