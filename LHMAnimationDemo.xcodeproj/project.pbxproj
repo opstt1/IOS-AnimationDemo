@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		912F10CF5ABF80A6A18A3D13 /* libPods-LHMAnimationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27099AF40D9F7AB4E02CE9FB /* libPods-LHMAnimationDemo.a */; };
+		E20C6AEB1DC8332400023B03 /* LHMDurationAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E20C6AEA1DC8332400023B03 /* LHMDurationAnimationViewController.m */; };
 		E214B8CB1DBDDAD900F6D0D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E214B8CA1DBDDAD900F6D0D3 /* main.m */; };
 		E214B8CE1DBDDAD900F6D0D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E214B8CD1DBDDAD900F6D0D3 /* AppDelegate.m */; };
 		E214B8D11DBDDAD900F6D0D3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E214B8D01DBDDAD900F6D0D3 /* ViewController.m */; };
@@ -44,6 +45,8 @@
 		27099AF40D9F7AB4E02CE9FB /* libPods-LHMAnimationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LHMAnimationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D414819EC8DF736FB78806 /* Pods-LHMAnimationDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHMAnimationDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LHMAnimationDemo/Pods-LHMAnimationDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		9C8A53BDCB8D29635F0AFCE5 /* Pods-LHMAnimationDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LHMAnimationDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-LHMAnimationDemo/Pods-LHMAnimationDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E20C6AE91DC8332400023B03 /* LHMDurationAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMDurationAnimationViewController.h; sourceTree = "<group>"; };
+		E20C6AEA1DC8332400023B03 /* LHMDurationAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMDurationAnimationViewController.m; sourceTree = "<group>"; };
 		E214B8C61DBDDAD900F6D0D3 /* LHMAnimationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHMAnimationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E214B8CA1DBDDAD900F6D0D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E214B8CC1DBDDAD900F6D0D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -232,6 +235,8 @@
 				E2EBF3F71DC2FDAB00F6AE16 /* LHMCAMediaTimingViewController.m */,
 				E27059651DC713C50065B496 /* LHMTimingFunctionViewController.h */,
 				E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */,
+				E20C6AE91DC8332400023B03 /* LHMDurationAnimationViewController.h */,
+				E20C6AEA1DC8332400023B03 /* LHMDurationAnimationViewController.m */,
 			);
 			name = LHMAnimationTest;
 			sourceTree = "<group>";
@@ -383,6 +388,7 @@
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
 				E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */,
 				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
+				E20C6AEB1DC8332400023B03 /* LHMDurationAnimationViewController.m in Sources */,
 				E2DE1B151DC04F1300B08215 /* LHMAnimationTestViewController.m in Sources */,
 				E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */,
 				E214B8D11DBDDAD900F6D0D3 /* ViewController.m in Sources */,
