@@ -27,6 +27,9 @@
 		E2686F281DBDF315005459E4 /* LHMCALayerTest.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2686F271DBDF315005459E4 /* LHMCALayerTest.storyboard */; };
 		E2686F2B1DBDF58C005459E4 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F2A1DBDF58C005459E4 /* Constants.m */; };
 		E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */; };
+		E2B206DB1DD2FF8F004BB507 /* SnakeMovingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B206DA1DD2FF8F004BB507 /* SnakeMovingViewController.m */; };
+		E2B206DD1DD2FFD4004BB507 /* LHMAnimation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2B206DC1DD2FFD4004BB507 /* LHMAnimation.storyboard */; };
+		E2B206E01DD30116004BB507 /* LHMCustomAnimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B206DF1DD30116004BB507 /* LHMCustomAnimationViewController.m */; };
 		E2C91AEA1DBF490E00820C71 /* LHMCAEmitterLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */; };
 		E2C91AEC1DBF64C800820C71 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AEB1DBF64C800820C71 /* GLKit.framework */; };
 		E2C91AEE1DBF64D800820C71 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C91AED1DBF64D800820C71 /* OpenGLES.framework */; };
@@ -78,6 +81,11 @@
 		E2686F2A1DBDF58C005459E4 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		E27059651DC713C50065B496 /* LHMTimingFunctionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMTimingFunctionViewController.h; sourceTree = "<group>"; };
 		E27059661DC713C50065B496 /* LHMTimingFunctionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMTimingFunctionViewController.m; sourceTree = "<group>"; };
+		E2B206D91DD2FF8F004BB507 /* SnakeMovingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnakeMovingViewController.h; sourceTree = "<group>"; };
+		E2B206DA1DD2FF8F004BB507 /* SnakeMovingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnakeMovingViewController.m; sourceTree = "<group>"; };
+		E2B206DC1DD2FFD4004BB507 /* LHMAnimation.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LHMAnimation.storyboard; sourceTree = "<group>"; };
+		E2B206DE1DD30116004BB507 /* LHMCustomAnimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCustomAnimationViewController.h; sourceTree = "<group>"; };
+		E2B206DF1DD30116004BB507 /* LHMCustomAnimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCustomAnimationViewController.m; sourceTree = "<group>"; };
 		E2C91AE81DBF490E00820C71 /* LHMCAEmitterLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCAEmitterLayerViewController.h; sourceTree = "<group>"; };
 		E2C91AE91DBF490E00820C71 /* LHMCAEmitterLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCAEmitterLayerViewController.m; sourceTree = "<group>"; };
 		E2C91AEB1DBF64C800820C71 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
@@ -154,6 +162,7 @@
 		E214B8C81DBDDAD900F6D0D3 /* LHMAnimationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E2B206D81DD2FD35004BB507 /* LHMAnimation */,
 				E2DE1B0B1DC04D7900B08215 /* LHMAnimationTest */,
 				E2DF65181DBF2D80009209D9 /* Framework */,
 				E2686F201DBDE803005459E4 /* BaseUI */,
@@ -216,6 +225,18 @@
 				E2DD0D701DC1A306004BCE8E /* UIColor+random.m */,
 			);
 			name = BaseUI;
+			sourceTree = "<group>";
+		};
+		E2B206D81DD2FD35004BB507 /* LHMAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				E2B206DC1DD2FFD4004BB507 /* LHMAnimation.storyboard */,
+				E2B206DE1DD30116004BB507 /* LHMCustomAnimationViewController.h */,
+				E2B206DF1DD30116004BB507 /* LHMCustomAnimationViewController.m */,
+				E2B206D91DD2FF8F004BB507 /* SnakeMovingViewController.h */,
+				E2B206DA1DD2FF8F004BB507 /* SnakeMovingViewController.m */,
+			);
+			name = LHMAnimation;
 			sourceTree = "<group>";
 		};
 		E2DE1B0B1DC04D7900B08215 /* LHMAnimationTest */ = {
@@ -310,6 +331,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B206DD1DD2FFD4004BB507 /* LHMAnimation.storyboard in Resources */,
 				E2DE1B0D1DC04E5C00B08215 /* LHMAnimationTest.storyboard in Resources */,
 				E2DE1B121DC04EFE00B08215 /* LHMAnimationTestInfo.plist in Resources */,
 				E2686F281DBDF315005459E4 /* LHMCALayerTest.storyboard in Resources */,
@@ -387,6 +409,8 @@
 				E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */,
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
 				E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */,
+				E2B206DB1DD2FF8F004BB507 /* SnakeMovingViewController.m in Sources */,
+				E2B206E01DD30116004BB507 /* LHMCustomAnimationViewController.m in Sources */,
 				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
 				E20C6AEB1DC8332400023B03 /* LHMDurationAnimationViewController.m in Sources */,
 				E2DE1B151DC04F1300B08215 /* LHMAnimationTestViewController.m in Sources */,

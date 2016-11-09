@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1Q-7y-ByH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H1Q-7y-ByH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -35,6 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ijw-Hq-syd">
+                                <rect key="frame" x="112.5" y="84" width="150" height="100"/>
                                 <color key="backgroundColor" red="0.98823529409999999" green="0.3921568627" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="DRh-1E-pR3"/>
@@ -46,6 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnP-oV-tbD">
+                                <rect key="frame" x="112.5" y="250" width="150" height="100"/>
                                 <color key="backgroundColor" red="0.35488414115646261" green="0.53805928620272114" blue="0.85882352939999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Animation">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -54,13 +59,25 @@
                                     <segue destination="iJc-AE-sX5" kind="show" id="qpl-pA-RbJ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKv-2d-pLk">
+                                <rect key="frame" x="112" y="430" width="150" height="100"/>
+                                <color key="backgroundColor" red="0.18924753289999999" green="0.8974609375" blue="0.2529296875" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="c4Q-N6-1Ap" kind="show" id="vyV-Kc-gwE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="OnP-oV-tbD" firstAttribute="height" secondItem="Ijw-Hq-syd" secondAttribute="height" id="5sq-gE-7iA"/>
+                            <constraint firstItem="wKv-2d-pLk" firstAttribute="height" secondItem="OnP-oV-tbD" secondAttribute="height" id="8VF-2p-4pU"/>
                             <constraint firstItem="OnP-oV-tbD" firstAttribute="top" secondItem="Ijw-Hq-syd" secondAttribute="bottom" constant="66" id="CU6-Nr-dvK"/>
+                            <constraint firstItem="wKv-2d-pLk" firstAttribute="width" secondItem="OnP-oV-tbD" secondAttribute="width" id="F0Q-3D-cb2"/>
                             <constraint firstItem="Ijw-Hq-syd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O2Y-E9-2pB"/>
                             <constraint firstItem="OnP-oV-tbD" firstAttribute="width" secondItem="Ijw-Hq-syd" secondAttribute="width" id="TXX-pG-lf6"/>
+                            <constraint firstItem="wKv-2d-pLk" firstAttribute="top" secondItem="OnP-oV-tbD" secondAttribute="bottom" constant="80" id="nn2-Op-BhJ"/>
+                            <constraint firstItem="wKv-2d-pLk" firstAttribute="centerX" secondItem="OnP-oV-tbD" secondAttribute="centerX" id="oyR-9U-2ir"/>
                             <constraint firstItem="Ijw-Hq-syd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="psd-Jf-AkD"/>
                             <constraint firstItem="OnP-oV-tbD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qTi-Mw-eZ7"/>
                         </constraints>
@@ -83,6 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="202" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="q7w-a6-V0Z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -115,6 +133,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ERv-QF-Mdo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -133,6 +152,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IOt-F6-psi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1118" y="383"/>
+        </scene>
+        <!--Custom Animation View Controller-->
+        <scene sceneID="p7Y-oH-gvE">
+            <objects>
+                <viewController storyboardIdentifier="LHMCustomAnimationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="c4Q-N6-1Ap" customClass="LHMCustomAnimationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0bg-i8-7ji"/>
+                        <viewControllerLayoutGuide type="bottom" id="gBz-O8-n3i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="70q-aU-7bX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iUV-sP-vrc">
+                                <rect key="frame" x="86.5" y="234.5" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.3548841412" green="0.53805928619999999" blue="0.076882628039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IT3-c5-a4r"/>
+                                    <constraint firstAttribute="width" constant="200" id="sTJ-za-ubH"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTap:" destination="c4Q-N6-1Ap" eventType="touchUpInside" id="92J-Uz-2co"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iUV-sP-vrc" firstAttribute="centerX" secondItem="70q-aU-7bX" secondAttribute="centerX" id="ejo-P4-0G6"/>
+                            <constraint firstItem="iUV-sP-vrc" firstAttribute="centerY" secondItem="70q-aU-7bX" secondAttribute="centerY" id="kI1-Re-tnG"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kn4-WV-Vwd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1086" y="1084"/>
         </scene>
     </scenes>
 </document>
