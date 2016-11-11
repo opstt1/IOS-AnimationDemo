@@ -20,6 +20,7 @@
 		E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E214B8E61DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m */; };
 		E214B8EF1DBDDC8200F6D0D3 /* LHMCALayerTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E214B8EE1DBDDC8200F6D0D3 /* LHMCALayerTestViewController.m */; };
 		E214B8F11DBDDCE800F6D0D3 /* LHMCALayerTestInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E214B8F01DBDDCE800F6D0D3 /* LHMCALayerTestInfo.plist */; };
+		E22684591DD490D10078050C /* Snake.m in Sources */ = {isa = PBXBuildFile; fileRef = E22684581DD490D10078050C /* Snake.m */; };
 		E2686F1E1DBDE52D005459E4 /* LHMCALayerTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F1C1DBDE52D005459E4 /* LHMCALayerTestCell.m */; };
 		E2686F1F1DBDE52D005459E4 /* LHMCALayerTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2686F1D1DBDE52D005459E4 /* LHMCALayerTestCell.xib */; };
 		E2686F231DBDE81B005459E4 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2686F221DBDE81B005459E4 /* BaseViewController.m */; };
@@ -69,6 +70,8 @@
 		E214B8ED1DBDDC8200F6D0D3 /* LHMCALayerTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCALayerTestViewController.h; sourceTree = "<group>"; };
 		E214B8EE1DBDDC8200F6D0D3 /* LHMCALayerTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCALayerTestViewController.m; sourceTree = "<group>"; };
 		E214B8F01DBDDCE800F6D0D3 /* LHMCALayerTestInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LHMCALayerTestInfo.plist; sourceTree = "<group>"; };
+		E22684571DD490D10078050C /* Snake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Snake.h; sourceTree = "<group>"; };
+		E22684581DD490D10078050C /* Snake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Snake.m; sourceTree = "<group>"; };
 		E2686F1B1DBDE52D005459E4 /* LHMCALayerTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LHMCALayerTestCell.h; sourceTree = "<group>"; };
 		E2686F1C1DBDE52D005459E4 /* LHMCALayerTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LHMCALayerTestCell.m; sourceTree = "<group>"; };
 		E2686F1D1DBDE52D005459E4 /* LHMCALayerTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LHMCALayerTestCell.xib; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				E2B206DF1DD30116004BB507 /* LHMCustomAnimationViewController.m */,
 				E2B206D91DD2FF8F004BB507 /* SnakeMovingViewController.h */,
 				E2B206DA1DD2FF8F004BB507 /* SnakeMovingViewController.m */,
+				E22684571DD490D10078050C /* Snake.h */,
+				E22684581DD490D10078050C /* Snake.m */,
 			);
 			name = LHMAnimation;
 			sourceTree = "<group>";
@@ -410,6 +415,7 @@
 				E214B8E91DBDDB0100F6D0D3 /* LHMCAReplicatiorLayerViewController.m in Sources */,
 				E27059671DC713C50065B496 /* LHMTimingFunctionViewController.m in Sources */,
 				E2B206DB1DD2FF8F004BB507 /* SnakeMovingViewController.m in Sources */,
+				E22684591DD490D10078050C /* Snake.m in Sources */,
 				E2B206E01DD30116004BB507 /* LHMCustomAnimationViewController.m in Sources */,
 				E2C91AF11DBF652D00820C71 /* LHMCAEAGLLayerViewController.m in Sources */,
 				E20C6AEB1DC8332400023B03 /* LHMDurationAnimationViewController.m in Sources */,
